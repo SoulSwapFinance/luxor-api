@@ -1,4 +1,4 @@
-# Soul API
+# Luxor API
 
 API configurations designed for the purposes of fulfilling data requests for CMC and CoinGecko.
 
@@ -17,11 +17,11 @@ yarn start
 
 ---
 
-#### **/supply/total**: Used by [Coingecko](https://coingecko.com) to display SOUL total supply.
+#### **/supply/total**: Used by [Coingecko](https://coingecko.com) to display LUXOR total supply.
 
-#### **/supply/circulating**: Used by [Coingecko](https://coingecko.com) to display SOUL's circulating supply.
+#### **/supply/circulating**: Used by [Coingecko](https://coingecko.com) to display LUXOR's circulating supply.
 
-#### **/supply/max**: Used by [Coingecko](https://coingecko.com) to display SOUL's max supply.
+#### **/supply/max**: Used by [Coingecko](https://coingecko.com) to display LUXOR's max supply.
 
 
 #### **/priceftm/token**: Used to display current derived price of token. **token** needs to be an address or the symbol of a token with enough liquidity.

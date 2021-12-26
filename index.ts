@@ -28,4 +28,4 @@ index.use(router.allowedMethods());
 
 const port = process.env.PORT || 3000;
 index.listen(port);
-console.log(`> soul-api running! (:${port})`);
+console.log(`> luxor-api running! (:${port})`);
