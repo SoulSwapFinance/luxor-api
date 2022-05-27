@@ -63,23 +63,23 @@ async function getBalanceOf(address) {
 }
 
 async function circulatingSupply(ctx) {
-    ctx.body = (await cache.getCirculatingSupply()).toString();
+    ctx.body = (await cache.getCirculatingSupply() / 1e9).toString();
 }
 
 async function circulatingSupplyAdjusted(ctx) {
-    ctx.body = ((await cache.getCirculatingSupply()).div(1E9)).toString();
+    ctx.body = ((await cache.getCirculatingSupply()) / 1e9).toString();
 }
 
 async function totalSupply(ctx) {
-    ctx.body = (await cache.getTotalSupply()).toString();
+    ctx.body = (await cache.getTotalSupply() / 1e9).toString();
 }
 
 async function totalSupplyAdjusted(ctx) {
-    ctx.body = ((await cache.getTotalSupply()).div(1E9)).toString();
+    ctx.body = ((await cache.getTotalSupply()) / 1e9).toString();
 }
 
 async function maxSupply(ctx) {
-    ctx.body = (await cache.getMaxSupply()).toString();
+    ctx.body = (await cache.getMaxSupply() / 1e9).toString();
 }
 
 const cache = new Cache()
