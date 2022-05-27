@@ -67,7 +67,7 @@ async function circulatingSupply(ctx) {
 }
 
 async function circulatingSupplyAdjusted(ctx) {
-    ctx.body = ((await cache.getCirculatingSupply()).div(_1E9)).toString();
+    ctx.body = ((await cache.getCirculatingSupply()).div(1E9)).toString();
 }
 
 async function totalSupply(ctx) {
@@ -75,7 +75,7 @@ async function totalSupply(ctx) {
 }
 
 async function totalSupplyAdjusted(ctx) {
-    ctx.body = ((await cache.getTotalSupply()).div(_1E9)).toString();
+    ctx.body = ((await cache.getTotalSupply()).div(1E9)).toString();
 }
 
 async function maxSupply(ctx) {
